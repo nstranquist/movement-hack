@@ -12,6 +12,7 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
     "@aptos-labs/ts-sdk": "^4.0.0",
     "@aptos-labs/wallet-adapter-react": "^7.0.4",
     "@aptos-labs/wallet-standard": "^0.5.1",
