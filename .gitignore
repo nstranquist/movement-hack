@@ -1,1 +1,18 @@
 refs/
+
+# Move build artifacts
+submission/bounty_board/build/
+**/*.mv
+**/*.abi
+
+# Frontend
+submission/frontend/.env.local
+submission/frontend/.next/
+submission/frontend/node_modules/
+
+# Terraform
+infra/.terraform/
+infra/.terraform.lock.hcl
+infra/*.tfstate
+infra/*.tfstate.backup
+infra/*.tfplan
