@@ -1,10 +1,13 @@
 # Active Context
 
 ## Current Task
-None - ready for first task
+Adjust frontend defaults for micro-bounty demo economics
 
 ## Current Phase
-N/A
+VAN - Initialization complete
 
 ## Next Phase
-Run `/van` to initialize a task
+BUILD
+
+## Key Files
+- `submission/frontend/components/create-bounty-dialog.tsx` — update placeholder, min, step values

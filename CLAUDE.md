@@ -52,8 +52,10 @@ Our overall hackathon plan is located in ./docs/project-spec/project-plan.md
 
 **agent notes:**
 - Frontend root: `submission/frontend/`
+- Vercel project: `movement-hack-frontend` (ID: `prj_Qs8kCzSvbbBdo2WPuoBwYbN613z5`, team: `team_VbTt4r9sKTs8j4m6N450OEHI`)
 - Production URL: https://frontend-zeta-amber-37.vercel.app
 - Deploy: `cd submission/frontend && npx vercel --prod --yes`
+- Root Directory in Vercel dashboard must be **blank** (not `submission/frontend`)
 - Env vars set in Vercel (public addresses only — not secrets):
   - `NEXT_PUBLIC_MODULE_ADDRESS` = deployed contract address
   - `NEXT_PUBLIC_AGENT_WALLET_ADDRESS` = CLI agent wallet
