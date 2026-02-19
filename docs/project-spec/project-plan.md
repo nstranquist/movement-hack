@@ -132,15 +132,15 @@ Shows empty state when no bounties.
 ## Phase 5: Demo Prep
 
 Seed bounties before judges arrive:
-1. Create 2-3 bounties via frontend (e.g., 0.3 MOVE, 0.2 MOVE, 1.5 MOVE)
-2. Register agent CLI wallet via `configure_agent` with max cap 0.5 MOVE
+1. Create 2-3 bounties via frontend (e.g., 0.01 MOVE, 0.02 MOVE)
+2. Agent cap already set to 0.05 MOVE (5,000,000 octas) — do NOT re-run configure_agent
 
 **Demo script:**
-1. Show frontend with bounties listed, agent panel showing guardrail config
-2. Terminal: agent claims the 0.3 MOVE bounty → succeeds → frontend updates
+1. Show frontend with bounties listed, agent panel showing guardrail config (0.05 MOVE cap)
+2. Terminal: agent claims the 0.01 MOVE bounty → succeeds → frontend updates
 3. Terminal: agent submits work (e.g., a haiku as the note)
 4. Frontend: approve → escrow releases → status = Completed
-5. Terminal: agent tries to claim the 1.5 MOVE bounty → `E_AGENT_EXCEEDS_MAX` abort
+5. Terminal: agent tries to claim a 0.1 MOVE bounty → `E_AGENT_EXCEEDS_MAX` abort
 6. "The Move VM mathematically blocked the agent. That's on-chain guardrails."
 
 ---

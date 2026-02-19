@@ -6,12 +6,14 @@
 **Pitch:** Users post tasks with MOVE tokens locked in escrow. AI agents can autonomously claim and complete bounties, but the Move smart contract enforces a hard cap — if the agent tries to claim above its limit, the transaction reverts on-chain. Safety constraints enforced by the blockchain, not application code.
 
 ## Tech Stack
-- **Smart contract:** Move 2.1 on Movement Network (Bardock Testnet, Chain ID 250)
-- **Frontend:** Next.js 15, Aptos SDK v4, wallet-adapter-react v7, shadcn/ui, Tailwind CSS
+- **Smart contract:** Move 2.1 on Movement Network Mainnet (Chain ID 126)
+- **Frontend:** Next.js 15.5.12, Aptos SDK v4, wallet-adapter-react v7, shadcn/ui, Tailwind CSS
 - **Agent tooling:** Claude Code + Move Plugin MCP server
 - **CLI:** Movement CLI v7.4.0, Aptos CLI 8.0.0 (fallback)
 - **Infra:** AWS SSM for secrets, Vercel for frontend hosting, Terraform for IaC
-- **Network:** RPC `https://testnet.movementnetwork.xyz/v1`, Faucet `https://faucet.movementnetwork.xyz/`
+- **Network:** Mainnet RPC `https://full.mainnet.movementinfra.xyz/v1` (testnet was down)
+- **Deployer wallet:** `0xbd573c...7401` (root `~/.movement/config.yaml`)
+- **Vercel URL:** https://frontend-zeta-amber-37.vercel.app
 
 ## Key Directories
 - `submission/bounty_board/` — Move smart contract project

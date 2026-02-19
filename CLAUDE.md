@@ -39,11 +39,12 @@ Our overall hackathon plan is located in ./docs/project-spec/project-plan.md
 **agent notes:**
 - CLI working dir for contract commands: `submission/bounty_board/`
 - Deployed module address: `0xbd573c130b74f71bf82356cc87c0ee0d6228e423c370b7f5b4a009534bac7401`
-- Network: Bardock Testnet (chainId 250), RPC: `https://testnet.movementnetwork.xyz/v1`
-- Agent wallet (CLI default profile): same as module address above, max claim cap 0.5 MOVE
+- **Network: Movement Mainnet** (Chain ID 126), RPC: `https://full.mainnet.movementinfra.xyz/v1` (testnet was down)
+- Deployer + agent wallet (CLI, root profile): `0xbd573c130b74f71bf82356cc87c0ee0d6228e423c370b7f5b4a009534bac7401`
 - Human wallet (Nightly browser): `0xabcd2ac4a5cb45bcbcc15b028057932adbee88ca45c0f0c1792bf3b75689ed74`
-- Config: `.movement/config.yaml` at repo root (has `default` + `agent2` profiles)
+- Config: `~/.movement/config.yaml` (root profile — single deployer, do NOT use `submission/bounty_board/.movement/`)
 - Encode strings to hex for CLI args: `echo -n "your string" | xxd -p | tr -d '\n'`
+- See `docs/wallets.md` for full wallet strategy
 
 ### Vercel Details
 
