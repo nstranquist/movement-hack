@@ -1,0 +1,1 @@
+https://developer.movementnetwork.xyz/events/openclawhackathon.md
