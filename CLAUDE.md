@@ -13,6 +13,7 @@ Our overall hackathon plan is located in ./docs/project-spec/project-plan.md
 
 - use 'movement' cli
 - use 'aws' cli
+- use 'vercel' cli
 
 ### AWS Details
 
@@ -38,10 +39,17 @@ Our overall hackathon plan is located in ./docs/project-spec/project-plan.md
 **agent notes:**
 - ...
 
+### Vercel Details
+
+**human notes:**
+- Use for frontend hosting
+
 ## Developer Practices
 
 - write to ./scripts when necessary to optimize your workflow
 - keep CLAUDE.md up to date and README.md up to date
+- write to docs/progress/ periodically with very high level brief of development progress based on our original plans and project roadmap.
+- always read .env directly and update .env and aws parameters accordingly. skip the .env.example practice and manipulate my real .env directly.
 
 ## Memory Bank Workflow
 
