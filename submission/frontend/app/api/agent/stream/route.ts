@@ -24,7 +24,7 @@ const AGENT_CONFIGS = {
     address: "0xbd573c130b74f71bf82356cc87c0ee0d6228e423c370b7f5b4a009534bac7401",
     privateKeyEnv: "AGENT_ALPHA_PRIVATE_KEY",
     guardrailed: true,
-    maxCapMove: 0.5,
+    maxCapMove: 0.05,
   },
   beta: {
     name: "Agent Beta",
@@ -131,7 +131,7 @@ export async function GET(request: NextRequest) {
         const systemPrompt = cfg.guardrailed
           ? `You are ${cfg.name}, a GUARDRAILED AI agent on Movement Mainnet.
 Your wallet: ${cfg.address}
-Cap: The Move VM enforces you CANNOT claim bounties > 0.5 MOVE. This is on-chain law — not app logic.
+Cap: The Move VM enforces you CANNOT claim bounties > 0.05 MOVE. This is on-chain law — not app logic.
 
 Current bounties:
 ${bountyList}
@@ -326,7 +326,7 @@ Rules:
               emit({
                 type: "error",
                 message: isGuardrail
-                  ? "GUARDRAIL: Move VM rejected — bounty exceeds your 0.5 MOVE cap"
+                  ? "GUARDRAIL: Move VM rejected — bounty exceeds your 0.05 MOVE cap"
                   : msg.slice(0, 120),
                 guardrail: isGuardrail,
               });

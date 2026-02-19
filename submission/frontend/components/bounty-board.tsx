@@ -5,6 +5,7 @@ import { useWallet } from "@aptos-labs/wallet-adapter-react";
 import { Button } from "@/components/ui/button";
 import { BountyCard } from "@/components/bounty-card";
 import { AgentPanel } from "@/components/agent-panel";
+import { AgentTerminal } from "@/components/agent-terminal";
 import { CreateBountyDialog } from "@/components/create-bounty-dialog";
 import { WalletSelectionModal } from "@/components/wallet-selection-modal";
 import { Bounty, AgentConfig } from "@/types/bounty";
@@ -126,6 +127,21 @@ export function BountyBoard() {
         {/* Sidebar */}
         <div className="space-y-4">
           <AgentPanel config={agentConfig} />
+        </div>
+      </div>
+
+      {/* AI Agent Demo Section */}
+      <div className="space-y-3">
+        <div>
+          <h3 className="text-sm font-semibold">Live Agent Demo</h3>
+          <p className="text-xs text-muted-foreground mt-0.5">
+            Real AI agents operating on-chain. Alpha is guardrailed by the Move VM — it cannot claim
+            bounties over 0.5 MOVE no matter what.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <AgentTerminal agentId="alpha" onTxComplete={refresh} />
+          <AgentTerminal agentId="beta" onTxComplete={refresh} />
         </div>
       </div>
     </div>

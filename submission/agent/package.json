@@ -1,0 +1,19 @@
+{
+  "name": "bountymove-agent",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "tsx agent.ts",
+    "once": "tsx agent.ts --once"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.37.0",
+    "@aptos-labs/ts-sdk": "^4.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.0.0"
+  }
+}
