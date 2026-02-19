@@ -6,6 +6,15 @@ The primary hackathon notes are located in ./hackathon-notes/openclawhackathon.m
 - The notes are located in ./hackathon-notes
 - Other reference repos are located in ./refs
 
+## Tooling
+
+- use 'movement' cli
+
+## Developer Practices
+
+- write to ./scripts when necessary to optimize your workflow
+- keep CLAUDE.md up to date and README.md up to date
+
 ## Memory Bank Workflow
 
 This project uses a structured development workflow. See [WORKFLOW.md](./WORKFLOW.md) for full documentation.

@@ -1,0 +1,11 @@
+{
+  "name": "movement-hackathon",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "pnpm --filter frontend dev",
+    "build:frontend": "pnpm --filter frontend build",
+    "dev:mcp": "pnpm --filter move-mcp-server dev",
+    "build:mcp": "pnpm --filter move-mcp-server build",
+    "build": "pnpm -r build"
+  }
+}
