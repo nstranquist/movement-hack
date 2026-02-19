@@ -1,0 +1,20 @@
+{
+  "name": "move",
+  "owner": {
+    "name": "Rahat Chowdhury",
+    "email": "rahat.chowdhury@moveindustries.xyz"
+  },
+  "metadata": {
+    "description": "Move smart contract development for Movement blockchain",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "move",
+      "source": "./",
+      "description": "Move development tools for Movement blockchain - scaffolding, debugging, deployment, and framework search",
+      "category": "development",
+      "tags": ["move", "movement", "aptos", "smart-contracts", "blockchain", "web3"]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+# mcp-server/dist/ is gitignored but exists on main - CI builds and commits it after merge
+# See .github/workflows/build-dist.yml
+mcp-server/dist/
+
+# Runtime data (keep structure)
+data/embeddings/*
+data/prompts/*
+!data/embeddings/.gitkeep
+!data/prompts/.gitkeep
+
+# Environment
+.env
+.env.*
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

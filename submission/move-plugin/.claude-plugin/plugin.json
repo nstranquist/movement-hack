@@ -1,0 +1,13 @@
+{
+  "name": "move",
+  "description": "Move smart contract development for Movement blockchain",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rahat Chowdhury",
+    "url": "https://github.com/Rahat-ch"
+  },
+  "homepage": "https://github.com/Rahat-ch/move-plugin",
+  "repository": "https://github.com/Rahat-ch/move-plugin",
+  "license": "Apache-2.0",
+  "keywords": ["move", "movement", "aptos", "smart-contracts", "blockchain"]
+}
