@@ -37,12 +37,29 @@ Our overall hackathon plan is located in ./docs/project-spec/project-plan.md
 - Primary driver for blockchain interaction and development. Refer to their docs at ./refs/movement-docs as well as the hackathon info and project plans.
 
 **agent notes:**
-- ...
+- CLI working dir for contract commands: `submission/bounty_board/`
+- Deployed module address: `0xbd573c130b74f71bf82356cc87c0ee0d6228e423c370b7f5b4a009534bac7401`
+- Network: Bardock Testnet (chainId 250), RPC: `https://testnet.movementnetwork.xyz/v1`
+- Agent wallet (CLI default profile): same as module address above, max claim cap 0.5 MOVE
+- Human wallet (Nightly browser): `0xabcd2ac4a5cb45bcbcc15b028057932adbee88ca45c0f0c1792bf3b75689ed74`
+- Config: `.movement/config.yaml` at repo root (has `default` + `agent2` profiles)
+- Encode strings to hex for CLI args: `echo -n "your string" | xxd -p | tr -d '\n'`
 
 ### Vercel Details
 
 **human notes:**
 - Use for frontend hosting
+
+**agent notes:**
+- Frontend root: `submission/frontend/`
+- Production URL: https://frontend-zeta-amber-37.vercel.app
+- Deploy: `cd submission/frontend && npx vercel --prod --yes`
+- Env vars set in Vercel (public addresses only — not secrets):
+  - `NEXT_PUBLIC_MODULE_ADDRESS` = deployed contract address
+  - `NEXT_PUBLIC_AGENT_WALLET_ADDRESS` = CLI agent wallet
+  - `NEXT_PUBLIC_HUMAN_WALLET_ADDRESS` = human browser wallet
+- Secrets (`ANTHROPIC_API_KEY`, `AGENT_PRIVATE_KEY`) stay in SSM only — no server-side routes use them
+- `typescript` and `eslint` build errors ignored via `next.config.ts` (template had pre-existing issues)
 
 ## Developer Practices
 
